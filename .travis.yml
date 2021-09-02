@@ -4,8 +4,8 @@ services:
 before_install:
   - docker build -t sweetfrog/docker-react -f Dockerfile.dev .
 
-script:
-  - docker run sweetfrog/docker-react npm run test -- --coverage
+#script:
+#  - docker run sweetfrog/docker-react npm run test -- --coverage
 
 deploy:
   provider: elasticbeanstalk
